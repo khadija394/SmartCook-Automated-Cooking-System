@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-mega", "id": "mega", "top": -133.8, "left": 25.2, "attrs": {} },
+    {
+      "type": "wokwi-hx711",
+      "id": "cell1",
+      "top": -237.4,
+      "left": -151,
+      "attrs": { "type": "5kg" }
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": 83.2,
+      "left": -52,
+      "attrs": { "pins": "i2c" }
+    },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": -298.9, "left": 182.2, "attrs": {} },
+    { "type": "wokwi-relay-module", "id": "relay1", "top": -278.2, "left": 403.2, "attrs": {} }
+  ],
+  "connections": [
+    [ "lcd1:SDA", "mega:20", "green", [ "h403.2", "v-259" ] ],
+    [ "lcd1:SCL", "mega:21", "green", [ "h412.8", "v-268.5" ] ],
+    [ "lcd1:VCC", "mega:5V", "red", [ "h240", "v-76.7" ] ],
+    [ "lcd1:GND", "mega:GND.2", "black", [ "h249.6", "v-57.6" ] ],
+    [ "pot1:GND", "mega:GND.1", "black", [ "v105.6", "h-67.2" ] ],
+    [ "pot1:SIG", "mega:A0", "green", [ "v278.4", "h18.8" ] ],
+    [ "pot1:VCC", "mega:5V", "red", [ "v278.4", "h-39.2" ] ],
+    [ "cell1:GND", "mega:GND.3", "black", [ "h355.2", "v258.9" ] ],
+    [ "cell1:DT", "mega:3", "green", [ "h393.6", "v76.3" ] ],
+    [ "cell1:SCK", "mega:2", "green", [ "h403.2", "v66.4" ] ],
+    [ "cell1:VCC", "mega:5V", "red", [ "h336", "v230.4" ] ],
+    [ "relay1:IN", "mega:9", "green", [ "h-211.2", "v115" ] ],
+    [ "relay1:VCC", "mega:5V", "red", [ "h-211.2", "v307.2" ] ],
+    [ "relay1:GND", "mega:GND.1", "black", [ "h-259.2", "v124.4" ] ]
+  ],
+  "dependencies": {}
+}
