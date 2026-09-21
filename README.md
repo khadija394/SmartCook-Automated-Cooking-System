@@ -1,2 +1,25 @@
-# SmartCook-Automated-Cooking-System
-Arduino-based smart cooking prototype with recipe management, real-time ingredient monitoring, and automatic overheat protection.
+# SmartCook — Automated Cooking & Safety System
+
+## Project Overview
+
+## Key Features
+
+## How It Works
+
+## Hardware
+
+## Technologies Used
+
+## System Architecture
+
+## Testing
+
+## Screenshots
+
+## Limitations
+
+## Future Improvements
+
+## How to Run the Simulation
+
+## Author
