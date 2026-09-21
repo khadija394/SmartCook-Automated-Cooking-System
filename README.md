@@ -9,7 +9,9 @@ An Arduino-based smart cooking prototype designed to assist users with recipe gu
   <img src="https://img.shields.io/badge/Simulation-Wokwi-orange" alt="Wokwi">
   <img src="https://img.shields.io/badge/Project-BSIT-purple" alt="BSIT Project">
 </p>
-
+<p align="center">
+  <img src="https://raw.githubusercontent.com/khadija394/SmartCook-Automated-Cooking-System/refs/heads/main/src/simulation/screenshots/circuit.png" alt="SmartCook Complete Circuit" width="800">
+</p>
 ## Project Overview
 
 An Arduino-based smart cooking prototype designed to assist users with recipe guidance, real-time ingredient measurement, and cooking safety monitoring.
