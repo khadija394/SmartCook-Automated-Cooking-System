@@ -28,9 +28,9 @@
 #define LOADCELL_DOUT_PIN 3
 #define LOADCELL_SCK_PIN 2
 
-// Relay logic used by the simulation
-#define HEATER_ON HIGH
-#define HEATER_OFF LOW
+// Relay module uses active-low control in this simulation
+#define HEATER_ON LOW
+#define HEATER_OFF HIGH
 
 // ============================================================
 // RECIPE DATA
@@ -78,7 +78,7 @@ void setup() {
 
   // Start with heater OFF
   digitalWrite(HEATER_RELAY, HEATER_OFF);
-  digitalWrite(BUZZER_PIN, LOW);
+  noTone(BUZZER_PIN);
 
   // Initialize LCD
   lcd.init();
@@ -90,13 +90,14 @@ void setup() {
   // Calibration factor for Wokwi simulation
   scale.set_scale(420);
 
-  // Reset weight reading to zero
+  // Reset scale to zero
   scale.tare();
 
   // Startup message
   lcd.clear();
   lcd.setCursor(0, 0);
   lcd.print("Smart Cooker");
+
   lcd.setCursor(0, 1);
   lcd.print("System Ready");
 
@@ -109,48 +110,54 @@ void setup() {
 
 void loop() {
 
-  // Run the currently selected recipe
+  // Run the current recipe
   runCookingProcess(cookbook[currentRecipeIndex]);
 
-  // Move to the next recipe after the current test finishes
+  // Move to the next recipe after completion
   currentRecipeIndex++;
 
   if (currentRecipeIndex >= 10) {
     currentRecipeIndex = 0;
   }
 
-  // Short pause before starting the next recipe
+  // Short pause before the next recipe
   delay(1000);
 }
 
 // ============================================================
-// TEMPERATURE SAFETY MONITORING
+// TEMPERATURE MONITORING
 // ============================================================
 
 float readTemperature() {
 
   int rawValue = analogRead(TEMP_SENSOR);
 
-  // Temperature conversion used for the simulation
+  // Temperature conversion used for the Wokwi simulation
   float celsius = (rawValue * 5.0 / 1023.0) * 100.0;
 
   return celsius;
 }
 
+// ============================================================
+// SAFETY CHECK
+// ============================================================
+
 bool checkSafety(int temperatureLimit) {
 
   float temperature = readTemperature();
 
+  // Check whether temperature is above the recipe limit
   if (temperature > temperatureLimit) {
 
-    // Immediately stop heating
+    // Immediately turn the heater OFF
     digitalWrite(HEATER_RELAY, HEATER_OFF);
 
-    // Activate warning buzzer
-    digitalWrite(BUZZER_PIN, HIGH);
+    // Activate continuous warning tone
+    tone(BUZZER_PIN, 1500);
 
     // Display safety warning
     lcd.clear();
+
     lcd.setCursor(0, 0);
     lcd.print("OVERHEAT ALERT!");
 
@@ -159,7 +166,7 @@ bool checkSafety(int temperatureLimit) {
     lcd.print(temperature, 1);
     lcd.print("C");
 
-    // Keep system stopped until reset
+    // Stop the system until reset
     while (true) {
       delay(100);
     }
@@ -174,31 +181,35 @@ bool checkSafety(int temperatureLimit) {
 
 void runCookingProcess(Recipe recipe) {
 
-  // Display recipe information
+  // Display recipe name
   lcd.clear();
+
   lcd.setCursor(0, 0);
   lcd.print(recipe.name);
 
+  lcd.setCursor(0, 1);
+  lcd.print("Starting...");
+
   delay(1500);
 
-  // Turn heater ON for the cooking process
+  // Turn heater ON
   digitalWrite(HEATER_RELAY, HEATER_ON);
 
   while (true) {
 
     // --------------------------------------------------------
-    // Read current ingredient weight
+    // Read ingredient weight
     // --------------------------------------------------------
 
     float currentWeight = scale.get_units(1);
 
-    // Prevent negative values from appearing on the LCD
+    // Prevent negative values
     if (currentWeight < 0) {
       currentWeight = 0;
     }
 
     // --------------------------------------------------------
-    // Display weight information
+    // Display weight
     // --------------------------------------------------------
 
     lcd.setCursor(0, 0);
@@ -211,22 +222,23 @@ void runCookingProcess(Recipe recipe) {
     lcd.print("g ");
 
     // --------------------------------------------------------
-    // Check temperature safety
+    // Temperature safety check
     // --------------------------------------------------------
 
     checkSafety(recipe.targetTemp);
 
     // --------------------------------------------------------
-    // Check whether target weight has been reached
+    // Check target weight
     // --------------------------------------------------------
 
     if (currentWeight >= recipe.targetWeight) {
 
-      // Stop heater
+      // Turn heater OFF
       digitalWrite(HEATER_RELAY, HEATER_OFF);
 
-      // Show completion message
+      // Display completion message
       lcd.clear();
+
       lcd.setCursor(0, 0);
       lcd.print("WEIGHT MATCHED!");
 
@@ -241,7 +253,7 @@ void runCookingProcess(Recipe recipe) {
       break;
     }
 
-    // Refresh sensor/display every 100 ms
+    // Refresh every 100 ms
     delay(100);
   }
 }
@@ -254,10 +266,14 @@ void triggerNotification() {
 
   for (int i = 0; i < 3; i++) {
 
-    digitalWrite(BUZZER_PIN, HIGH);
-    delay(200);
+    // Short notification tone
+    tone(BUZZER_PIN, 1000, 200);
 
-    digitalWrite(BUZZER_PIN, LOW);
-    delay(200);
+    delay(250);
+
+    // Make sure the tone is stopped
+    noTone(BUZZER_PIN);
+
+    delay(150);
   }
 }
