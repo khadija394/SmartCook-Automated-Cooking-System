@@ -10,16 +10,16 @@ The system was developed as a BSIT semester project and tested using the Wokwi v
 
 ## Key Features
 
-* Recipe management
-* Step-by-step cooking guidance
-* Real-time ingredient weight monitoring
-* HX711 load-cell integration
-* LCD-based user feedback
-* Buzzer notifications
-* Temperature monitoring
-* Automatic overheat protection
-* Relay-based heater shutdown
-* Wokwi hardware simulation
+- Recipe management
+- Step-by-step cooking guidance
+- Real-time ingredient weight monitoring
+- HX711 load-cell integration
+- LCD-based user feedback
+- Buzzer notifications
+- Temperature monitoring
+- Automatic overheat protection
+- Relay-based heater shutdown
+- Wokwi hardware simulation
 
 ## How It Works
 
@@ -33,48 +33,48 @@ The system was developed as a BSIT semester project and tested using the Wokwi v
 
 ## Hardware
 
-* Arduino Mega 2560
-* HX711 Load Cell Amplifier
-* Load Cell Weight Sensor
-* 16×2 I2C LCD
-* Relay Module
-* Piezo Buzzer
-* Temperature Input
+- Arduino Mega 2560
+- HX711 Load Cell Amplifier
+- Load Cell Weight Sensor
+- 16×2 I2C LCD
+- Relay Module
+- Piezo Buzzer
+- Temperature Input
 
 ## Technologies Used
 
-* C++
-* Arduino
-* Embedded Systems
-* I2C Communication
-* Wokwi
-* Arduino IDE
+- C++
+- Arduino
+- Embedded Systems
+- I2C Communication
+- Wokwi
+- Arduino IDE
 
 ## Testing
 
 The system was tested through a Wokwi virtual hardware simulation.
 
-| Test Case | Purpose                      | Status |
-| --------- | ---------------------------- | ------ |
-| TC-01     | Code compilation             | Passed |
-| TC-02     | Microcontroller boot-up      | Passed |
-| TC-03     | Hardware/interface stability | Passed |
-| TC-04     | Recipe and weight tracking   | Passed |
-| TC-05     | Overheat safety mechanism    | Passed |
+| Test Case | Purpose | Status |
+|---|---|---|
+| TC-01 | Code compilation | Passed |
+| TC-02 | Microcontroller boot-up | Passed |
+| TC-03 | Hardware/interface stability | Passed |
+| TC-04 | Recipe and weight tracking | Passed |
+| TC-05 | Overheat safety mechanism | Passed |
 
 ## Screenshots
 
 ### Complete Circuit
 
-![Complete Circuit](screenshots/circuit.png)
+![Complete Circuit](src/simulation/screenshots/circuit.png)
 
 ### Weight Monitoring
 
-![Weight Monitoring](screenshots/weight-monitoring.png)
+![Weight Monitoring](src/simulation/screenshots/weight-monitoring.png)
 
 ### Overheat Alert
 
-![Overheat Alert](screenshots/overheat-alert.png)
+![Overheat Alert](src/simulation/screenshots/overheat-alert.png)
 
 ## Current Limitations
 
@@ -82,16 +82,16 @@ This project is currently a simulation-based prototype. The system uses a charac
 
 ## Future Improvements
 
-* TFT touchscreen interface
-* Mobile application
-* Persistent recipe and progress storage
-* Automated ingredient dispensing
-* ESP32 Wi-Fi connectivity
-* IoT-based recipe management
+- TFT touchscreen interface
+- Mobile application
+- Persistent recipe and progress storage
+- Automated ingredient dispensing
+- ESP32 Wi-Fi connectivity
+- IoT-based recipe management
 
 ## Simulation
 
-The project was developed and tested using Wokwi virtual prototyping.
+The project was developed and tested using the Wokwi virtual prototyping environment.
 
 **Wokwi Simulation:** Add your Wokwi project link here.
 
