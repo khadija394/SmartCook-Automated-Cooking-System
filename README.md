@@ -1,4 +1,16 @@
+
 # SmartCook — Automated Cooking & Safety System
+
+An Arduino-based smart cooking prototype designed to assist users with recipe guidance, real-time ingredient measurement, and cooking safety monitoring.
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Arduino-Mega%202560-00979D?logo=arduino&logoColor=white" alt="Arduino Mega 2560">
+  <img src="https://img.shields.io/badge/Language-C%2B%2B-blue?logo=cplusplus&logoColor=white" alt="C++">
+  <img src="https://img.shields.io/badge/Simulation-Wokwi-orange" alt="Wokwi">
+  <img src="https://img.shields.io/badge/Project-BSIT-purple" alt="BSIT Project">
+</p>
+
+## Project Overview
 
 An Arduino-based smart cooking prototype designed to assist users with recipe guidance, real-time ingredient measurement, and cooking safety monitoring.
 
