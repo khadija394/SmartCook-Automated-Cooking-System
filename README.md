@@ -89,11 +89,9 @@ This project is currently a simulation-based prototype. The system uses a charac
 - ESP32 Wi-Fi connectivity
 - IoT-based recipe management
 
-## Simulation
+### Simulation & Testing
 
-The project was developed and tested using the Wokwi virtual prototyping environment.
-
-**Wokwi Simulation:** Add your Wokwi project link here.
+The system was tested using the Wokwi Arduino simulation environment to verify circuit behavior and system logic.
 
 ## Author
 
