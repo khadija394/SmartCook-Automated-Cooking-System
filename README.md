@@ -1,4 +1,4 @@
-# 🔥 SmartCook — Automated Cooking & Safety System
+#  SmartCook — Automated Cooking & Safety System
 
 > An intelligent Arduino-powered cooking assistant that combines precision ingredient measurement, real-time safety monitoring, and automated cooking guidance. Designed to demonstrate advanced embedded systems integration and IoT prototyping.
 
@@ -15,11 +15,11 @@
 
 ---
 
-## 📋 Project Overview
+##  Project Overview
 
 **SmartCook** is a cutting-edge embedded systems prototype that automates the cooking process while prioritizing user safety. By integrating precision weight sensors, thermal monitoring, and intelligent recipe management, the system delivers a seamless cooking experience with built-in safeguards against common kitchen hazards.
 
-### 🎯 Problem Statement
+###  Problem Statement
 Traditional cooking methods lack real-time feedback on ingredient quantities and temperature monitoring, leading to wasted ingredients and potential safety risks. SmartCook solves this by providing:
 - Automated ingredient measurement verification
 - Continuous temperature monitoring and overheat prevention
@@ -28,20 +28,20 @@ Traditional cooking methods lack real-time feedback on ingredient quantities and
 
 ---
 
-## ⚡ Key Features
+##  Key Features
 
 | Feature | Description |
 |---------|-------------|
-| 🍳 **Recipe Management** | Pre-loaded recipe database with precise ingredient specifications |
-| ⚖️ **Weight Monitoring** | Real-time HX711 load cell integration for accurate gram-level measurements |
-| 📊 **Smart Feedback System** | LCD display + buzzer alerts for ingredient verification and temperature warnings |
-| 🌡️ **Thermal Protection** | Continuous temperature monitoring with automatic relay-based heater shutdown |
-| 🔐 **Safety-First Design** | Overheat detection and emergency alert system |
-| 📱 **User Interface** | I2C LCD interface for intuitive step-by-step guidance |
+|  **Recipe Management** | Pre-loaded recipe database with precise ingredient specifications |
+|  **Weight Monitoring** | Real-time HX711 load cell integration for accurate gram-level measurements |
+|  **Smart Feedback System** | LCD display + buzzer alerts for ingredient verification and temperature warnings |
+|  **Thermal Protection** | Continuous temperature monitoring with automatic relay-based heater shutdown |
+|  **Safety-First Design** | Overheat detection and emergency alert system |
+|  **User Interface** | I2C LCD interface for intuitive step-by-step guidance |
 
 ---
 
-## 🔧 How It Works
+##  How It Works
 
 The system operates in a continuous loop of measurement, verification, and safety monitoring:
 
@@ -74,7 +74,7 @@ Cooking Process Continues...
 
 ---
 
-## 💻 Hardware Stack
+##  Hardware Stack
 
 ### Microcontroller & Sensors
 - **Arduino Mega 2560** — 54 I/O pins, high memory for recipe storage
@@ -90,7 +90,7 @@ Cooking Process Continues...
 
 ---
 
-## 🛠 Technologies & Languages
+##  Technologies & Languages
 
 ```
 Embedded Systems → Arduino Mega 2560
@@ -102,7 +102,7 @@ Development Environment → Arduino IDE
 
 ---
 
-## 📊 System Architecture
+##  System Architecture
 
 The system is organized into modular components:
 
@@ -114,7 +114,7 @@ The system is organized into modular components:
 
 ---
 
-## ✅ Testing & Validation
+##  Testing & Validation
 
 All components were rigorously tested using Wokwi's virtual hardware simulation environment:
 
@@ -159,7 +159,7 @@ All components were rigorously tested using Wokwi's virtual hardware simulation 
 
 ---
 
-## ⚠️ Current Limitations
+##  Current Limitations
 
 - **Platform**: Simulation-based prototype (Wokwi) — not yet deployed on physical hardware
 - **UI**: Character LCD display (16x2) — basic compared to modern touchscreen interfaces
@@ -169,7 +169,7 @@ All components were rigorously tested using Wokwi's virtual hardware simulation 
 
 ---
 
-## 🔮 Future Roadmap
+##  Future Roadmap
 
 ### Phase 2: Enhanced UI & Connectivity
 - [ ] TFT touchscreen interface with color recipe visualization
@@ -191,7 +191,7 @@ All components were rigorously tested using Wokwi's virtual hardware simulation 
 
 ---
 
-## 🎓 Project Context
+##  Project Context
 
 **Developed as**: BSIT Semester Project  
 **Academic Focus**: Embedded Systems Design, Hardware Integration, IoT Prototyping  
@@ -204,7 +204,7 @@ All components were rigorously tested using Wokwi's virtual hardware simulation 
 
 ---
 
-## 📖 How to Use This Repository
+##  How to Use This Repository
 
 1. **Explore the Code** — Check `/src` for Arduino sketches and hardware integration
 2. **View Simulation** — Open `.wokwi` files in Wokwi editor for live testing
@@ -213,37 +213,37 @@ All components were rigorously tested using Wokwi's virtual hardware simulation 
 
 ---
 
-## 💡 Key Learnings
+##  Key Learnings
 
 This project demonstrates:
-- ✅ Real-time embedded systems programming
-- ✅ Multi-sensor integration and data fusion
-- ✅ Safety-critical system design patterns
-- ✅ Hardware-software co-design
-- ✅ I2C protocol mastery
-- ✅ Virtual prototyping best practices
+-  ●Real-time embedded systems programming
+-  ●Multi-sensor integration and data fusion
+-  ●Safety-critical system design patterns
+-  ●Hardware-software co-design
+-  ●I2C protocol mastery
+-  ●Virtual prototyping best practices
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Khadija Shoukat**  
 *BSIT Student | Embedded Systems Enthusiast | IoT & Automation Specialist*
 
-📧 Connect with me on [LinkedIn](https://linkedin.com/in/khadija-shoukat) | 🔗 View my [GitHub](https://github.com/khadija394)
+ Connect with me on [LinkedIn](https://linkedin.com/in/khadija-shoukat) | 🔗 View my [GitHub](https://github.com/khadija394)
 
 ---
 
-## 📄 License
+##  License
 
 This project is provided for educational and academic purposes. For commercial or professional use, please contact the author.
 
 ---
 
 <p align="center">
-  <strong>⭐ If this project helped you, please consider giving it a star! ⭐</strong>
+  <strong> If this project helped you, please consider giving it a star! </strong>
 </p>
 
 <p align="center">
-  <em>Built with ❤️ using Arduino and embedded systems passion</em>
+  <em>Built with  using Arduino and embedded systems passion</em>
 </p>
