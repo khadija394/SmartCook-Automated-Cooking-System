@@ -230,7 +230,7 @@ This project demonstrates:
 **Khadija Shoukat**  
 *BSIT Student | Embedded Systems Enthusiast | IoT & Automation Specialist*
 
- Connect with me on [LinkedIn](https://linkedin.com/in/khadija-shoukat) | 🔗 View my [GitHub](https://github.com/khadija394)
+ Connect with me on [LinkedIn](www.linkedin.com/in/khadija-shoukat-597853334) | 🔗 View my [GitHub](https://github.com/khadija394)
 
 ---
 
