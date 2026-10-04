@@ -1,6 +1,6 @@
 #  SmartCook — Automated Cooking & Safety System
 
-> An intelligent Arduino-powered cooking assistant that combines precision ingredient measurement, real-time safety monitoring, and automated cooking guidance. Designed to demonstrate advanced embedded systems integration and IoT prototyping.
+> An intelligent Arduino-powered cooking assistant that combines precision ingredient measurement, real-time safety monitoring, and automated cooking guidance. Designed to demonstrate advanced embedded systems thinking and practical hardware integration.
 
 <p align="center">
   <img src="https://img.shields.io/badge/Arduino-Mega%202560-00979D?logo=arduino&logoColor=white&style=for-the-badge" alt="Arduino Mega 2560">
@@ -10,14 +10,14 @@
 </p>
 
 <p align="center">
-  <strong><a href="#-key-features">Features</a> • <a href="#-how-it-works">How It Works</a> • <a href="#-hardware-stack">Hardware</a> • <a href="#-testing--validation">Testing</a> • <a href="#-future-roadmap">Roadmap</a></strong>
+  <strong><a href="#-key-features">Features</a> • <a href="#-how-it-works">How It Works</a> • <a href="#-hardware-stack">Hardware</a> • <a href="#-testing--validation">Testing</a> • <a href="#-current-implementation-status">Status</a> • <a href="#-project-context">Context</a></strong>
 </p>
 
 ---
 
 ##  Project Overview
 
-**SmartCook** is a cutting-edge embedded systems prototype that automates the cooking process while prioritizing user safety. By integrating precision weight sensors, thermal monitoring, and intelligent recipe management, the system delivers a seamless cooking experience with built-in safeguards against common kitchen hazards.
+**SmartCook** is a cutting-edge embedded systems prototype that automates the cooking process while prioritizing user safety. By integrating precision weight sensors, thermal monitoring, and intelligent control logic, it delivers a smarter and safer kitchen workflow.
 
 ###  Problem Statement
 Traditional cooking methods lack real-time feedback on ingredient quantities and temperature monitoring, leading to wasted ingredients and potential safety risks. SmartCook solves this by providing:
@@ -216,12 +216,12 @@ All components were rigorously tested using Wokwi's virtual hardware simulation 
 ##  Key Learnings
 
 This project demonstrates:
--  ●Real-time embedded systems programming
--  ●Multi-sensor integration and data fusion
--  ●Safety-critical system design patterns
--  ●Hardware-software co-design
--  ●I2C protocol mastery
--  ●Virtual prototyping best practices
+- ●Real-time embedded systems programming
+- ●Multi-sensor integration and data fusion
+- ●Safety-critical system design patterns
+- ●Hardware-software co-design
+- ●I2C protocol mastery
+- ●Virtual prototyping best practices
 
 ---
 
@@ -230,7 +230,7 @@ This project demonstrates:
 **Khadija Shoukat**  
 *BSIT Student | Embedded Systems Enthusiast | IoT & Automation Specialist*
 
- Connect with me on [LinkedIn](www.linkedin.com/in/khadija-shoukat-597853334) | 🔗 View my [GitHub](https://github.com/khadija394)
+Connect with me on [LinkedIn](https://www.linkedin.com/in/khadija-shoukat-597853334) | 🔗 View my [GitHub](https://github.com/khadija394)
 
 ---
 
